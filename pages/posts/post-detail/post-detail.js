@@ -76,9 +76,9 @@ Page({
     wx.showModal({
       title: '收藏',
       content: postCollected ? '收藏该文章?' : '取消收藏该文章',
-      showCancel: "true",
+      showCancel: true,
       cancelText: "取消",
-      cancelColor: "#333",
+      cancelColor: "#333333",
       confirmText: "确认",
       confirmColor: "#405f80",
       success: function(res) {

@@ -12,6 +12,12 @@ Page({
     totalCount: 0,
     isEmpty: true
   },
+  onMovieTap: function (event) {
+    var movieId = event.currentTarget.dataset.movieid
+    wx.navigateTo({
+      url: '../movie-detail/movie-detail?movieId=' + movieId
+    })
+  },
   processDoubanData(moviesDouban) {
 
     var movies = []

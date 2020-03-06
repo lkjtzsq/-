@@ -3,5 +3,8 @@ App({
     g_isPlayingMusic:false,
     g_currentMusicPostId:null,
     doubanBase:"http://t.yushu.im"
+  },
+  onLaunch:function(options){
+    console.log(options)
   }
 })

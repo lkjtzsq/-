@@ -1,0 +1,56 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <switch name="switch" type="swicth" checked="{{false}}" color="blue" bindchange="onBindChange"></switch>
+  <view style="height:1px;width:100%;margin:40rpx 0;background:red;"></view>
+  <slider value="10" min="0" max="500" name="slider" step="50" show-value="true" bindchange="onBindSlider"></slider>
+  <view style="height:1px;width:100%;margin:40rpx 0;background:red;"></view>
+  <radio-group bindchange="onBindRadio" name="radio">
+    <label>
+      <radio value="战士" checked="true">战士</radio>
+    </label>
+    <label>
+      <radio value="法师">法师</radio>
+    </label>
+  </radio-group>
+
+  <view style="height:1px;width:100%;margin:40rpx 0;background:red;"></view>
+  <view>
+    <checkbox-group bindchange="onBindCheckbox" class="checkbox" name="checkbox">
+      <label>
+        <checkbox value="椒盐排骨">椒盐排骨</checkbox>
+      </label>
+      <label>
+        <checkbox value="红烧丸子">红烧丸子</checkbox>
+      </label>
+      <label>
+        <checkbox value="锅包肉">锅包肉</checkbox>
+      </label>
+      <label>
+        <checkbox value="鸭血粉丝汤">鸭血粉丝汤</checkbox>
+      </label>
+
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">submit</button>
+    <button formType="reset">reset</button>
+
+  </view>
+</form>
+<view>
+  <map id="map" longitude="113.324520" latitude="23.099994" scale="12" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" style="width:100%;height:300px;"></map>
+</view>
+<view>
+  <button bindtap="choseAddress">选择地址</button>
+</view>
+<view>
+ <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>
+<view>
+  <button bindtap="checkSession">检查登录状态</button>
+</view>
+<view>
+  <button bindtap="openSetting">打开设置</button>
+</view>
+<view>
+  <button bindtap="startRecord">开始录音</button>
+</view>
